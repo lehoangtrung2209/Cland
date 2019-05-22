@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+ <!-- ADMIN TEMPLATE -->
+ 
+  <definition name="admin.template" template="/WEB-INF/templates/admin/template.jsp">
+    <put-attribute name="header" value="/WEB-INF/templates/admin/header.jsp" />
+     <put-attribute name="left-bar" value="/WEB-INF/templates/admin/left-bar.jsp" />
+    <put-attribute name="body" value="" />
+    <put-attribute name="footer" value="/WEB-INF/templates/admin/footer.jsp" />
+  </definition>
+  
+  <!--  index -->
+  <definition name="admin.index.index" extends="admin.template">
+  	<put-attribute name="title" value="Admin - Trang chủ" />
+    <put-attribute name="body" value="/WEB-INF/views/admin/index/index.jsp" />
+  </definition>
+  
+   <!--  cat -->
+  <definition name="admin.cat.index" extends="admin.template">
+  	<put-attribute name="title" value="Admin - Danh mục dự án" />
+    <put-attribute name="body" value="/WEB-INF/views/admin/cat/index.jsp" />
+  </definition>
+  
+  <definition name="admin.cat.add" extends="admin.template">
+  	<put-attribute name="title" value="Admin - Thêm danh mục dự án" />
+    <put-attribute name="body" value="/WEB-INF/views/admin/cat/add.jsp" />
+  </definition>
+  
+  <definition name="admin.cat.edit" extends="admin.template">
+  	<put-attribute name="title" value="Admin - Sửa danh mục dự án" />
+    <put-attribute name="body" value="/WEB-INF/views/admin/cat/edit.jsp" />
+  </definition>
+  
+  <!--  catnews -->
+  <definition name="admin.catnews.index" extends="admin.template">
+  	<put-attribute name="title" value="Admin - Danh mục tin tức" />
+    <put-attribute name="body" value="/WEB-INF/views/admin/catnews/index.jsp" />
+  </definition>
+  
+  <definition name="admin.catnews.add" extends="admin.template">
+  	<put-attribute name="title" value="Admin - Thêm danh mục tin tức" />
+    <put-attribute name="body" value="/WEB-INF/views/admin/catnews/add.jsp" />
+  </definition>
+  
+  <definition name="admin.catnews.edit" extends="admin.template">
+  	<put-attribute name="title" value="Admin - Sửa danh mục tin tức" />
+    <put-attribute name="body" value="/WEB-INF/views/admin/catnews/edit.jsp" />
+  </definition>
+  
+  <!--  user -->
+  <definition name="admin.user.index" extends="admin.template">
+  	<put-attribute name="title" value="Admin - Người dùng" />
+    <put-attribute name="body" value="/WEB-INF/views/admin/user/index.jsp" />
+  </definition>
+  
+  <definition name="admin.user.add" extends="admin.template">
+  	<put-attribute name="title" value="Admin - Thêm người dùng" />
+    <put-attribute name="body" value="/WEB-INF/views/admin/user/add.jsp" />
+  </definition>
+  
+  <definition name="admin.user.edit" extends="admin.template">
+  	<put-attribute name="title" value="Admin - Sửa người dùng" />
+    <put-attribute name="body" value="/WEB-INF/views/admin/user/edit.jsp" />
+  </definition>
+  
+  <definition name="admin.user.profile" extends="admin.template">
+  	<put-attribute name="title" value="Admin - Profile" />
+    <put-attribute name="body" value="/WEB-INF/views/admin/user/profile.jsp" />
+  </definition>
+  
+  <!--  news -->
+  <definition name="admin.news.index" extends="admin.template">
+  	<put-attribute name="title" value="Admin - Tin" />
+    <put-attribute name="body" value="/WEB-INF/views/admin/news/index.jsp" />
+  </definition>
+  
+  <definition name="admin.news.add" extends="admin.template">
+  	<put-attribute name="title" value="Admin - Thêm tin" />
+    <put-attribute name="body" value="/WEB-INF/views/admin/news/add.jsp" />
+  </definition>
+  
+  <definition name="admin.news.edit" extends="admin.template">
+  	<put-attribute name="title" value="Admin - Sửa tin" />
+    <put-attribute name="body" value="/WEB-INF/views/admin/news/edit.jsp" />
+  </definition>
+  
+  <!-- contact -->
+  <definition name="admin.contact.index" extends="admin.template">
+  	<put-attribute name="title" value="Admin - Liên hệ" />
+    <put-attribute name="body" value="/WEB-INF/views/admin/contact/index.jsp" />
+  </definition>
+  
+  <!--  project -->
+  <definition name="admin.project.index" extends="admin.template">
+  	<put-attribute name="title" value="Admin - Dự án" />
+    <put-attribute name="body" value="/WEB-INF/views/admin/project/index.jsp" />
+  </definition>
+  
+  <definition name="admin.project.add" extends="admin.template">
+  	<put-attribute name="title" value="Admin - Thêm dự án" />
+    <put-attribute name="body" value="/WEB-INF/views/admin/project/add.jsp" />
+  </definition>
+  
+  <definition name="admin.project.edit" extends="admin.template">
+  	<put-attribute name="title" value="Admin - Sửa dự án" />
+    <put-attribute name="body" value="/WEB-INF/views/admin/project/edit.jsp" />
+  </definition>
+  
+  <!--  block -->
+  <definition name="admin.block.index" extends="admin.template">
+  	<put-attribute name="title" value="Admin - Block đất" />
+    <put-attribute name="body" value="/WEB-INF/views/admin/block/index.jsp" />
+  </definition>
+  
+  <definition name="admin.block.add" extends="admin.template">
+  	<put-attribute name="title" value="Admin - Thêm block đất" />
+    <put-attribute name="body" value="/WEB-INF/views/admin/block/add.jsp" />
+  </definition>
+  
+  <definition name="admin.block.edit" extends="admin.template">
+  	<put-attribute name="title" value="Admin - Sửa block" />
+    <put-attribute name="body" value="/WEB-INF/views/admin/block/edit.jsp" />
+  </definition>
+   <!--END ADMIN TEMPLATE -->
+    <!-- ///////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+   <!-- PUBLIC TEMPLATE -->
+  <definition name="public.template" template="/WEB-INF/templates/public/template.jsp">
+    <put-attribute name="header" value="/WEB-INF/templates/public/header.jsp" />
+     <put-attribute name="rightbar" value="/WEB-INF/templates/public/rightbar.jsp" />
+    <put-attribute name="body" value="" />
+    <put-attribute name="footer" value="/WEB-INF/templates/public/footer.jsp" />
+  </definition>
+  
+  <definition name="public.land.index" extends="public.template">
+  	<put-attribute name="title" value="Cland - Trang chủ" />
+    <put-attribute name="body" value="/WEB-INF/views/public/index.jsp" />
+  </definition>
+  
+  <definition name="public.land.cat" extends="public.template">
+  	<put-attribute name="title" value="Cland - Danh mục" />
+    <put-attribute name="body" value="/WEB-INF/views/public/cat.jsp" />
+  </definition>
+  
+  <definition name="public.land.detail" extends="public.template">
+  	<put-attribute name="title" value="Cland - Chi tiết" />
+    <put-attribute name="body" value="/WEB-INF/views/public/detail.jsp" />
+  </definition>
+  
+  <definition name="public.land.search" extends="public.template">
+  	<put-attribute name="title" value="Cland - Tìm kiếm" />
+    <put-attribute name="body" value="/WEB-INF/views/public/search.jsp" />
+  </definition>
+  
+  <definition name="public.contact.index" extends="public.template">
+  	<put-attribute name="title" value="Cland - Liên hệ" />
+    <put-attribute name="body" value="/WEB-INF/views/public/contact.jsp" />
+  </definition>
+  <!--END PUBLIC TEMPLATE -->
+  
+  <!-- auth login -->
+  <definition name="auth.login" template="/WEB-INF/views/auth/login.jsp">
+  	<put-attribute name="title" value="Cland - Đăng nhập" />
+    <put-attribute name="header" value="/WEB-INF/templates/admin/header.jsp" />
+    <put-attribute name="footer" value="/WEB-INF/templates/auth/footer.jsp" />
+  </definition>
+  <!-- end login -->
+  
+  <!-- error -->
+  <definition name="error.403" template="/WEB-INF/views/error/403.jsp">
+  </definition>
+  <definition name="error.404" template="/WEB-INF/views/error/404.jsp">
+  </definition>
+  <definition name="error.400" template="/WEB-INF/views/error/400.jsp">
+  </definition>
+  <definition name="error.500" template="/WEB-INF/views/error/500.jsp">
+  </definition>
+  <!-- end error -->
+</tiles-definitions>
